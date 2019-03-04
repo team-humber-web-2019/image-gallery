@@ -44,6 +44,11 @@ Colours:
   overflow: hidden;
 }
 
+.nav-bar {
+  background-color: #333;
+}
+
+
 .header-gal {
   margin: 1em 0;
 }
