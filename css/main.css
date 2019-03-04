@@ -46,6 +46,13 @@ Colours:
 
 .nav-bar {
   background-color: #333;
+  position: fixed;
+}
+.main-menu {
+  display: none;
+}
+.open {
+  display: block;
 }
 
 
