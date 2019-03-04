@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>A simple photo gallery</title>
+  <meta name="description" content="A photo gallery">
+  <meta name="author" content="RP">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <header class="header-body">
+    <!-- #1. Add a nav, it can server as the entire bar for this example -->
+    <nav class="nav-bar">
+      <div class="logo"><a href="index.html"><img src="img/camera.svg" alt="Camera logo"></a></div>
+      <ul class="main-menu">
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </nav>
+    <!-- End of #1. -->
+
+    <h1>My Photo Gallery</h1>
+  </header>
+  <main class="gallery">
+    <header class="header-gal">
+      <h2>Albums / Categories</h2>
+      <ul class="categories">
+        <li class="cat"><a href="#">Travel</a></li>
+        <li class="cat"><a href="#">Food</a></li>
+      </ul>
+    </header>
+    <article id="photos">
+      <ul class="album">
+        <li class="photo travel"><div class="gal-img"><img src="img/travel-1.jpg" alt="Travel photo"></div><div class="caption">Travel photo</div></li>
+        <li class="photo"><div class="gal-img"><img src="img/travel-2.jpg" alt="Travel photo"></div><div class="caption">Travel photo</div></li>
+        <li class="photo"><div class="gal-img"><img src="img/travel-3.jpg" alt="Travel photo"></div><div class="caption">Travel photo</div></li>
+        <li class="photo"><div class="gal-img"><img src="img/travel-4.jpg" alt="Travel photo"></div><div class="caption">Travel photo</div></li>
+        <li class="photo"><div class="gal-img"><img src="img/food-1.jpg" alt="Food photo"></div><div class="caption">Food photo</div></li>
+        <li class="photo"><div class="gal-img"><img src="img/food-2.jpg" alt="Food photo"></div><div class="caption">Food photo</div></li>
+        <li class="photo"><div class="gal-img"><img src="img/food-3.jpg" alt="Food photo"></div><div class="caption">Food photo</div></li>
+        <li class="photo"><div class="gal-img"><img src="img/food-4.jpg" alt="Food photo"></div><div class="caption">Food photo</div></li>
+      </ul>
+      <!-- #2. Add a "modal", it will cover the entire document when an image gets clicked -->
+      <div class="modal">
+        <div class="modal-image"><img src="img/travel-4.jpg" alt="The road ahead"></div>
+        <div class="modal-caption">The road ahead</div>
+        <button class="modal-close">
+          <div></div>
+          <div></div>
+        </button>
+      </div>
+      <!-- End of #2. -->
+    </article>
+  </main>
+  <footer class="footer-body">
+    Made with love.
+  </footer>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

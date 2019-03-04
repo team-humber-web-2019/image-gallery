@@ -1,0 +1,132 @@
+/*
+** STYLE GUIDE **
+
+Fonts:
+  serif: georgia
+  sans-serif: helvetica
+  script: 'Caveat'  (google font)
+
+Colours:
+  #333333: text & footer background
+  #ffffff: background of body, polaroids, menu items, footer color
+  #999999: background of main
+  #204177: image captions
+  box-shadow: 0 0 0.5em rgba(0,0,0,0.5): box shadow of polaroids
+
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Caveat');
+
+ body {
+   background-color: white;
+   color: #333;
+   font: 1em georgia, serif;
+ }
+
+ h1 {
+   font-size: 2em;
+   margin: 0.5em 0;
+ }
+
+ h2 {
+   font: 0.75em helvetica, arial, sans-serif;
+ }
+
+
+/******** SHARED UTILITY CLASSES ********/
+
+
+
+/************ CONTENT CLASSES ***********/
+
+.header-body {
+  padding: 0 1em;
+  overflow: hidden;
+}
+
+.header-gal {
+  margin: 1em 0;
+}
+
+.cat {
+  display: inline-block;
+}
+  .cat a {
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5;
+    padding: 0 0.5em;
+    border-radius: 0.25em;
+    display: inline-block;
+  }
+
+.gallery {
+  background-color: #999;
+  padding: 0 1em;
+  overflow: hidden;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+.photo {
+  background-color: #fff;
+  padding: 0 1em;
+  /* margin: 1em 0; */
+  overflow: hidden;
+  box-shadow: 0 0 .5em rgba(0,0,0,1);
+}
+
+.gal-img {
+  margin: 1em 0;
+}
+
+.caption {
+  margin: 1em 0;
+  font: 1.5em 'Caveat', cursive;
+  color: #204177
+}
+
+.footer-body {
+  background-color: #333;
+  color: #fff;
+  line-height: 3;
+  padding: 0 1em;
+}
+
+
+
+
+/*** RESPONSIVE MEDIA QUERIES ***/
+
+@media screen and (min-width: 45em) {
+
+  body {
+    background-color: grey;
+    text-align: center;
+  }  
+
+  .album {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+
+@media screen and (min-width: 60em) {
+
+  .album {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gallery {
+    max-width: 75em;   /* only grow to 75em */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+} 
