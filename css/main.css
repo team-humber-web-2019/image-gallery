@@ -65,17 +65,16 @@ Colours:
 }  */
 
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 7.5em;
+  height: 7.5em;
   background-color:tomato;
   border-radius: 50%;
   text-align: center;
-  line-height: 120px;
   margin: 1em auto;
+  padding: 1.875em 0;
 }
 .logo img {
-  width: 80%;
-  vertical-align: middle;
+  height: 100%;
 }
 
 
