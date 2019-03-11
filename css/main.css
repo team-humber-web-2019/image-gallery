@@ -81,6 +81,31 @@ Colours:
   height: 50%;
   margin: 25% 0;
 }
+.hamburger {
+  font-size: 1em;
+  padding: 0 0.25em;
+  margin: 0;
+  width: 3em;
+  height: 3em;
+  background-color: #ccc;
+  border: none;
+}
+  .hamburger div {
+    background-color: black;
+    height: .25em;
+    margin: .5625em 0;
+    transition: all 0.5s;
+  }
+  .hamburger.close div:first-child {
+    transform: translateY(0.84em) rotate(45deg);
+  }
+  .hamburger.close div:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.close div:last-child {
+    transform: translateY(-0.84em) rotate(-45deg);
+  }
+
 
 
 .header-gal {
