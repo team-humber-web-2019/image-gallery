@@ -44,6 +44,41 @@ Colours:
   overflow: hidden;
 }
 
+.nav-bar {
+  background-color: #333;
+  margin: 0 -1em;
+  padding: 0 1em;
+  overflow: hidden;
+}
+
+/* Another solution to the above:
+.header-body {
+  overflow: hidden;
+}
+  .header-body h1 {
+    padding: 0 1rem;
+  }
+
+.nav-bar {
+  background-color: #333;
+  padding: 0 1rem;
+}  */
+
+.logo {
+  width: 120px;
+  height: 120px;
+  background-color:tomato;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+  margin: 1em auto;
+}
+.logo img {
+  width: 80%;
+  vertical-align: middle;
+}
+
+
 .header-gal {
   margin: 1em 0;
 }
