@@ -65,16 +65,21 @@ Colours:
 }  */
 
 .logo {
-  width: 7.5em;
-  height: 7.5em;
+  /* New unit:
+      vw: viewport width (%)
+      vh: viewport height (%) */
+  width: 50vw;
+  height: 50vw;
+  max-width: 10em;
+  max-height: 10em;
   background-color:tomato;
   border-radius: 50%;
   text-align: center;
   margin: 1em auto;
-  padding: 1.875em 0;
 }
 .logo img {
-  height: 100%;
+  height: 50%;
+  margin: 25% 0;
 }
 
 
