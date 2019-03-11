@@ -21,6 +21,7 @@ Colours:
    background-color: white;
    color: #333;
    font: 1em georgia, serif;
+   padding-top: 7em;
  }
 
  h1 {
@@ -46,9 +47,14 @@ Colours:
 
 .nav-bar {
   background-color: #333;
-  margin: 0 -1em;
+  /* margin: 0 -1em; */
   padding: 0 1em;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
 }
 
 /* Another solution to the above:
@@ -70,8 +76,8 @@ Colours:
       vh: viewport height (%) */
   width: 50vw;
   height: 50vw;
-  max-width: 10em;
-  max-height: 10em;
+  max-width: 5em;
+  max-height: 5em;
   background-color:tomato;
   border-radius: 50%;
   text-align: center;
@@ -89,6 +95,10 @@ Colours:
   height: 3em;
   background-color: #ccc;
   border: none;
+  vertical-align: middle;
+  position: absolute;
+  top: 1em;
+  right: 1em;
 }
   .hamburger div {
     background-color: black;
@@ -96,16 +106,30 @@ Colours:
     margin: .5625em 0;
     transition: all 0.5s;
   }
-  .hamburger.close div:first-child {
+  .nav-bar.open .hamburger div:first-child {
     transform: translateY(0.84em) rotate(45deg);
   }
-  .hamburger.close div:nth-child(2) {
+  .nav-bar.open .hamburger div:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.close div:last-child {
+  .nav-bar.open .hamburger div:last-child {
     transform: translateY(-0.84em) rotate(-45deg);
   }
 
+  .main-menu {
+    display: none;
+  }
+  .nav-bar.open .main-menu {
+    display: block;
+  }
+  .main-menu a {
+    color: white;
+    text-decoration: none;
+    font: 1em helvetica, sans-serif;
+    line-height: 2;
+    display: block;
+    border-top: 1px solid #999;
+  }
 
 
 .header-gal {
